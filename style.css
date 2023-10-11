@@ -9,14 +9,23 @@ body{
     display: grid;
     grid-template-columns: 1fr 5fr 2fr;
     grid-template-rows: 1.5fr 8fr;
-    background-color: darkcyan;
+    background-color: #EEa47f
 }
 #header{
-    background-color:deepskyblue;
+    background-color:#EE4E34;
     grid-column: 2 / 4;
     display: grid;
     text-align: center;
-    align-content: center;
+    justify-content: center;
+}
+#header #searchbar{
+    display: grid;
+    align-self: center;
+    padding-left: 8px;
+    width: 20vw;
+    border-radius: 8px;
+    background-color: lightgray;
+    color: gray;
 }
 #sidebar{
     grid-column: 1 / 2;
@@ -26,9 +35,9 @@ body{
     grid-template-rows: repeat(20, 1fr);
 }
 .sideContent img{
-    margin-left: -34px;
-    margin-right: 10px;
-    margin-bottom: -7px;
+    position: absolute;
+    margin-left: -36px;
+    margin-top: -3px;
     height: 24px;
     width: 24px;
 }
@@ -38,19 +47,23 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    padding-left: 40px;
     justify-items: center;
     align-items: center;
 }
 #contentContainer div{
     display: grid;
     border-radius: 8px;
-    outline: blue 5px auto;
-    text-align: center;
-    background-color:burlywood;
+    outline: cadetblue 5px auto;
+    background-color:#EEa47f;
     min-width: none;
     min-height: none;
     width: 90%;
     height:80%;
+    padding: 12px;
+}
+#contentContainer p{
+    margin-top: -10%;
 }
 #feedContainer{
     background-color: rgb(232, 232, 232);
@@ -60,7 +73,7 @@ body{
     padding-top: 7.5%;
 }
 #feedContainer div{
-    background-color:burlywood;
+    background-color:#EE4E34;
     width: 70%;
     height: 90%;
     border-radius: 8px;
