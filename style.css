@@ -15,17 +15,36 @@ body{
     background-color:#EE4E34;
     grid-column: 2 / 4;
     display: grid;
-    text-align: center;
-    justify-content: center;
+    align-content: start;
+    padding: 8px;
+    grid-template-columns: 2.5fr 1fr;
+}
+#header img{
+    position: absolute;
+    height: 24px;
+    width: 24px;
 }
 #header #searchbar{
     display: grid;
     align-self: center;
     padding-left: 8px;
     width: 20vw;
+    height: 2vh;
     border-radius: 8px;
     background-color: lightgray;
     color: gray;
+    margin-left: 28px;
+}
+#header #searchbar, #header img{
+    grid-column: 1/2;
+}
+#buttons button{
+    color: blue;
+    grid-column: 2/3;
+    width: 25%;
+    border-radius: 6px;
+    margin-top: 20%;
+    height: 20%;
 }
 #sidebar{
     grid-column: 1 / 2;
